@@ -1,0 +1,454 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Successfully verify search result display",
+        "description": "",
+        "id": "landing-in-home-page-and-display;successfully-verify-search-result-display",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 41158322400,
+              "error_message": "org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 39.315\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027LAPTOP-GCEPLDKO\u0027, ip: \u0027192.168.1.88\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\Ashique\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 155c02baea048aba06c5d9199b217890\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)\r\n\tat opencart.utility.TestBaseOpenCart.launch(TestBaseOpenCart.java:53)\r\n\tat opencart.stepdefinition.StepDefHomePage.launch_application(StepDefHomePage.java:18)\r\n\tat ✽.Given Launch application \"\u003cURL\u003e\"(HomePageOpenCart.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "Launch application \"\u003cURL\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cURL\u003e",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefHomePage.launch_application(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "product search by iphone",
+            "match": {
+              "location": "StepDefHomePage.product_search_by_iphone()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "click on search button",
+            "match": {
+              "location": "StepDefHomePage.click_on_search_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Verify user on search result display",
+            "match": {
+              "location": "StepDefHomePage.verify_user_on_search_result_display()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Landing in Home Page and Display",
+    "description": "",
+    "id": "landing-in-home-page-and-display",
+    "keyword": "Feature",
+    "uri": "HomePageOpenCart.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 4,
+            "value": "#@Sanity2"
+          },
+          {
+            "line": 5,
+            "value": "#Scenario: User can logout successfully"
+          },
+          {
+            "line": 6,
+            "value": "#Given Launch application \"\u003cURL\u003e\""
+          },
+          {
+            "line": 7,
+            "value": "#Then Click on \u0027My Account\u0027 Dropdown menu"
+          },
+          {
+            "line": 8,
+            "value": "#Then Click \u0027Logout\u0027 option"
+          },
+          {
+            "line": 9,
+            "value": "#Then Click on \u0027Continue\u0027 button"
+          }
+        ],
+        "line": 13,
+        "name": "User can successfully get the credentials",
+        "description": "",
+        "id": "logout-and-forgot-password;user-can-successfully-get-the-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4131862700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Launch application \"\u003cURL\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cURL\u003e",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefHomePage.launch_application(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 114892400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User will click on \u0027My Account\u0027 Dropdownmenu",
+            "match": {
+              "location": "StepDeffLogoutPage.user_will_click_on_My_Account_Dropdownmenu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 918279500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User will click \u0027Login\u0027 option",
+            "match": {
+              "location": "StepDeffLogoutPage.user_will_click_Login_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1095732500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User will click on \u0027Forgotten Password\u0027 link from Login page",
+            "match": {
+              "location": "StepDeffLogoutPage.user_will_click_on_Forgotten_Password_link_from_Login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 173861000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Enter the email address of an existing account user forgot the password",
+            "match": {
+              "location": "StepDeffLogoutPage.enter_the_email_address_of_an_existing_account_user_forgot_the_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2180422100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User will click on \u0027Continue\u0027 button",
+            "match": {
+              "location": "StepDeffLogoutPage.user_will_click_on_Continue_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@Sanity3"
+          }
+        ]
+      }
+    ],
+    "name": "Logout and forgot password",
+    "description": "",
+    "id": "logout-and-forgot-password",
+    "keyword": "Feature",
+    "uri": "LogOutPageOpenCart.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "User can signin successfully",
+        "description": "",
+        "id": "signin;user-can-signin-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1221559700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Launch application \"\u003cURL\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cURL\u003e",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefHomePage.launch_application(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 121343900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on \u0027My Account\u0027 Drop menu",
+            "match": {
+              "location": "StepDeffLoginPage.click_on_My_Account_Drop_menu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1766139200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click on login",
+            "match": {
+              "location": "StepDeffLoginPage.click_on_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 630321500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter valid \u0027E-Mail Address\u0027 and \u0027Password\u0027 into the respective fields",
+            "match": {
+              "location": "StepDeffLoginPage.enter_valid_E_Mail_Address_and_Password_into_the_respective_fields()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1420031300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on login button",
+            "match": {
+              "location": "StepDeffLoginPage.click_on_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Sanity1"
+          }
+        ]
+      }
+    ],
+    "name": "Signin",
+    "description": "",
+    "id": "signin",
+    "keyword": "Feature",
+    "uri": "LoginPageOpenCart.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Successfully verify product search \u0026 display",
+        "description": "",
+        "id": "product-display;successfully-verify-product-search-\u0026-display",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 820024200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Launch application \"\u003cURL\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cURL\u003e",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefHomePage.launch_application(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 823390600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter any existing Product name into the Search text box field",
+            "match": {
+              "location": "StepDeffProductDisplay.enter_any_existing_Product_name_into_the_Search_text_box_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 963776800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on the button having search icon",
+            "match": {
+              "location": "StepDeffProductDisplay.click_on_the_button_having_search_icon()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26450739900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on the Product displayed in the Search results",
+            "match": {
+              "location": "StepDeffProductDisplay.click_on_the_Product_displayed_in_the_Search_results()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 108987800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on the main bigger sized Thumbnail image displayed on the \u0027Product Display Page\u0027",
+            "match": {
+              "location": "StepDeffProductDisplay.click_on_the_main_bigger_sized_Thumbnail_image_displayed_on_the_Product_Display_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 161578700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click on \u0027\u003c\u0027 and \u0027\u003e\u0027 options",
+            "match": {
+              "location": "StepDeffProductDisplay.click_on_and_options()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3442196200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click on \u0027x\u0027 option or press \u0027ESC\u0027 keyboard key when the thumbnails are displayed in Light box view",
+            "match": {
+              "location": "StepDeffProductDisplay.click_on_x_option_or_press_ESC_keyboard_key_when_the_thumbnails_are_displayed_in_Light_box_view()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 78238600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click on the normal sized Thumbnail images",
+            "match": {
+              "location": "StepDeffProductDisplay.click_on_the_normal_sized_Thumbnail_images()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 137816900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Click on \u0027\u003c\u0027 and \u0027\u003e\u0027 options again",
+            "match": {
+              "location": "StepDeffProductDisplay.click_on_and_options_again()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 61155700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Click on \u0027x\u0027 option or press \u0027ESC\u0027 keyboard key again when the thumbnails are displayed in Light box view",
+            "match": {
+              "location": "StepDeffProductDisplay.click_on_x_option_or_press_ESC_keyboard_key_again_when_the_thumbnails_are_displayed_in_Light_box_view()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Sanity4"
+          }
+        ]
+      }
+    ],
+    "name": "Product Display",
+    "description": "",
+    "id": "product-display",
+    "keyword": "Feature",
+    "uri": "ProductDissplayOpenCart.feature"
+  }
+]
