@@ -2,48 +2,63 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-27T13:30:06 PST" name="Default suite" finished-at="2021-11-27T13:32:30 PST" duration-ms="143762">
+  <suite started-at="2022-04-26T15:34:08 PDT" name="Default suite" finished-at="2022-04-26T15:35:28 PDT" duration-ms="79710">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:opencart.testrunnerr.TestRunner@65f095f8]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-11-27T13:30:06 PST" name="Default test" finished-at="2021-11-27T13:32:30 PST" duration-ms="143762">
+    <test started-at="2022-04-26T15:34:08 PDT" name="Default test" finished-at="2022-04-26T15:35:28 PDT" duration-ms="79710">
       <class name="opencart.testrunnerr.TestRunner">
-        <test-method is-config="true" signature="LaunchApplicationURL()[pri:0, instance:opencart.testrunnerr.TestRunner@65f095f8]" started-at="2021-11-27T13:30:06 PST" name="LaunchApplicationURL" finished-at="2021-11-27T13:30:44 PST" duration-ms="38400" status="PASS">
+        <test-method is-config="true" signature="LaunchApplicationURL()[pri:0, instance:opencart.testrunnerr.TestRunner@65f095f8]" started-at="2022-04-26T15:34:08 PDT" name="LaunchApplicationURL" finished-at="2022-04-26T15:34:19 PDT" duration-ms="11354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplicationURL -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:opencart.testrunnerr.TestRunner@65f095f8]" started-at="2021-11-27T13:30:44 PST" name="setUpClass" finished-at="2021-11-27T13:30:46 PST" duration-ms="2175" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:opencart.testrunnerr.TestRunner@65f095f8]" started-at="2022-04-26T15:34:20 PDT" name="setUpClass" finished-at="2022-04-26T15:34:23 PDT" duration-ms="3307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:opencart.testrunnerr.TestRunner@65f095f8]" started-at="2021-11-27T13:30:55 PST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-11-27T13:31:39 PST" duration-ms="43963" status="FAIL">
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:opencart.testrunnerr.TestRunner@65f095f8]" started-at="2022-04-26T15:34:23 PDT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2022-04-26T15:34:34 PDT" duration-ms="10753" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Landing in Home Page and Display]]>
+                <![CDATA[Checkout]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:opencart.testrunnerr.TestRunner@65f095f8]" started-at="2022-04-26T15:34:34 PDT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2022-04-26T15:35:20 PDT" duration-ms="45779" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Logout and forgot password]]>
               </value>
             </param>
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 39.315
-  (Session info: chrome=96.0.4664.45)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//body/nav[@id='top']/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'LAPTOP-GCEPLDKO', ip: '192.168.1.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 155c02baea048aba06c5d9199b217890]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9411d8d8ea1f0e82dc6740e173696679
+*** Element info: {Using=xpath, value=//body/nav[@id='top']/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 39.315
-  (Session info: chrome=96.0.4664.45)
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//body/nav[@id='top']/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'LAPTOP-GCEPLDKO', ip: '192.168.1.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 155c02baea048aba06c5d9199b217890
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9411d8d8ea1f0e82dc6740e173696679
+*** Element info: {Using=xpath, value=//body/nav[@id='top']/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]}
 at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -74,13 +89,15 @@ at org.testng.TestNG.run(TestNG.java:1037)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 39.315
-  (Session info: chrome=96.0.4664.45)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//body/nav[@id='top']/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'LAPTOP-GCEPLDKO', ip: '192.168.1.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 155c02baea048aba06c5d9199b217890
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9411d8d8ea1f0e82dc6740e173696679
+*** Element info: {Using=xpath, value=//body/nav[@id='top']/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -91,28 +108,23 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-at opencart.utility.TestBaseOpenCart.launch(TestBaseOpenCart.java:53)
-at opencart.stepdefinition.StepDefHomePage.launch_application(StepDefHomePage.java:18)
-at ✽.Given Launch application "<URL>"(HomePageOpenCart.feature:6)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy24.click(Unknown Source)
+at opencart.pageaction.LogoutPageAction.Logout(LogoutPageAction.java:14)
+at opencart.stepdefinition.StepDeffLogoutPage.click_Logout_option(StepDeffLogoutPage.java:17)
+at ✽.Then Click 'Logout' option(LogOutPageOpenCart.feature:8)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:opencart.testrunnerr.TestRunner@65f095f8]" started-at="2021-11-27T13:31:39 PST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-11-27T13:31:48 PST" duration-ms="8635" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Logout and forgot password]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:opencart.testrunnerr.TestRunner@65f095f8]" started-at="2021-11-27T13:31:48 PST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-11-27T13:31:53 PST" duration-ms="5174" status="PASS">
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:opencart.testrunnerr.TestRunner@65f095f8]" started-at="2022-04-26T15:35:20 PDT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2022-04-26T15:35:27 PDT" duration-ms="6897" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -123,7 +135,7 @@ at ✽.Given Launch application "<URL>"(HomePageOpenCart.feature:6)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:opencart.testrunnerr.TestRunner@65f095f8]" started-at="2021-11-27T13:31:53 PST" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-11-27T13:32:26 PST" duration-ms="33063" status="PASS">
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:opencart.testrunnerr.TestRunner@65f095f8]" started-at="2022-04-26T15:35:27 PDT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2022-04-26T15:35:28 PDT" duration-ms="1072" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -134,14 +146,10 @@ at ✽.Given Launch application "<URL>"(HomePageOpenCart.feature:6)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:opencart.testrunnerr.TestRunner@65f095f8]" started-at="2021-11-27T13:32:26 PST" name="tearDownClass" finished-at="2021-11-27T13:32:26 PST" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:opencart.testrunnerr.TestRunner@65f095f8]" started-at="2022-04-26T15:35:28 PDT" name="tearDownClass" finished-at="2022-04-26T15:35:28 PDT" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="CloseApplicationURL()[pri:0, instance:opencart.testrunnerr.TestRunner@65f095f8]" started-at="2021-11-27T13:32:26 PST" name="CloseApplicationURL" finished-at="2021-11-27T13:32:30 PST" duration-ms="3421" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseApplicationURL -->
       </class> <!-- opencart.testrunnerr.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

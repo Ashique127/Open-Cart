@@ -1,6 +1,7 @@
 package opencart.pageaction;
 
-import opencart.pagelocatorrr.LoginPageLocator;
+import junit.framework.Assert;
+import opencart.pagelocat.LoginPageLocator;
 import opencart.utility.TestBaseOpenCart;
 
 public class LoginPageAction extends TestBaseOpenCart {
@@ -22,6 +23,42 @@ public class LoginPageAction extends TestBaseOpenCart {
 
 	public void ClickonLoginButton() {
 		loginPageLocator.Clickonloginbutton.click();
+
+	}
+
+	public void VerifyMyAccount() {
+		boolean xx = loginPageLocator.VerifyAccount.isDisplayed();
+		Assert.assertTrue(xx);
+
+	}
+
+	public void EditAcct() {
+		loginPageLocator.EditAccInfo.click();
+
+	}
+
+	public void FirstNameClear() {
+		loginPageLocator.ClearFisrtName.clear();
+
+	}
+
+	public void LastNameClear() {
+		loginPageLocator.ClearLasttName.clear();
+
+	}
+
+	public void EmailClear() {
+		loginPageLocator.ClearEmail.clear();
+
+	}
+
+	public void TelephoneClear() {
+		loginPageLocator.ClearTelephone.clear();
+
+	}
+
+	public void InsertFirstName() {
+		loginPageLocator.NewFisrtName.sendKeys("Sohel");
 
 	}
 }

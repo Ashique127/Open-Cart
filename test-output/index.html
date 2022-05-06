@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Ashique\AppData\Local\Temp\testng-eclipse-840001451\testng-customsuite.xml</span>
+                    <span>C:\Users\Ashique\AppData\Local\Temp\testng-eclipse-1450651647\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="opencart.testrunnerr.TestRunner" class="method navigator-link" hash-for-method="feature(Landing in Home Page and Display)">feature(Landing in Home Page and Display)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="opencart.testrunnerr.TestRunner" class="method navigator-link" hash-for-method="feature(Logout and forgot password)">feature(Logout and forgot password)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -118,12 +118,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="opencart.testrunnerr.TestRunner" class="method navigator-link" hash-for-method="feature(Logout and forgot password)">feature(Logout and forgot password)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="opencart.testrunnerr.TestRunner" class="method navigator-link" hash-for-method="feature(Signin)">feature(Signin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="opencart.testrunnerr.TestRunner" class="method navigator-link" hash-for-method="feature(Signin)">feature(Signin)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="opencart.testrunnerr.TestRunner" class="method navigator-link" hash-for-method="feature(Checkout)">feature(Checkout)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -151,17 +151,19 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Landing in Home Page and Display)">
-                  </a> <!-- feature(Landing in Home Page and Display) -->
+                  <a name="feature(Logout and forgot password)">
+                  </a> <!-- feature(Logout and forgot password) -->
                   <span class="method-name">feature</span>
-                  <span class="parameters">(Landing in Home Page and Display)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 39.315
-  (Session info: chrome=96.0.4664.45)
+                  <span class="parameters">(Logout and forgot password)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/nav[@id=&apos;top&apos;]/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]&quot;}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;LAPTOP-GCEPLDKO&apos;, ip: &apos;192.168.1.88&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 155c02baea048aba06c5d9199b217890
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9411d8d8ea1f0e82dc6740e173696679
+*** Element info: {Using=xpath, value=//body/nav[@id=&apos;top&apos;]/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]}
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -192,13 +194,15 @@ Session ID: 155c02baea048aba06c5d9199b217890
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 39.315
-  (Session info: chrome=96.0.4664.45)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/nav[@id=&apos;top&apos;]/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]&quot;}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;LAPTOP-GCEPLDKO&apos;, ip: &apos;192.168.1.88&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 155c02baea048aba06c5d9199b217890
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9411d8d8ea1f0e82dc6740e173696679
+*** Element info: {Using=xpath, value=//body/nav[@id=&apos;top&apos;]/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -209,10 +213,16 @@ Session ID: 155c02baea048aba06c5d9199b217890
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at opencart.utility.TestBaseOpenCart.launch(TestBaseOpenCart.java:53)
-	at opencart.stepdefinition.StepDefHomePage.launch_application(StepDefHomePage.java:18)
-	at ✽.Given Launch application &quot;&lt;URL&gt;&quot;(HomePageOpenCart.feature:6)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at opencart.pageaction.LogoutPageAction.Logout(LogoutPageAction.java:14)
+	at opencart.stepdefinition.StepDeffLogoutPage.click_Logout_option(StepDeffLogoutPage.java:17)
+	at ✽.Then Click &apos;Logout&apos; option(LogOutPageOpenCart.feature:8)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -229,20 +239,20 @@ Session ID: 155c02baea048aba06c5d9199b217890
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Logout and forgot password)">
-                  </a> <!-- feature(Logout and forgot password) -->
+                  <a name="feature(Signin)">
+                  </a> <!-- feature(Signin) -->
                   <span class="method-name">feature</span>
-                  <span class="parameters">(Logout and forgot password)</span>
+                  <span class="parameters">(Signin)</span>
                   <em>
 (Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Signin)">
-                  </a> <!-- feature(Signin) -->
+                  <a name="feature(Checkout)">
+                  </a> <!-- feature(Checkout) -->
                   <span class="method-name">feature</span>
-                  <span class="parameters">(Signin)</span>
+                  <span class="parameters">(Checkout)</span>
                   <em>
 (Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
@@ -262,7 +272,7 @@ Session ID: 155c02baea048aba06c5d9199b217890
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Ashique\AppData\Local\Temp\testng-eclipse-840001451\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Ashique\AppData\Local\Temp\testng-eclipse-1450651647\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -323,19 +333,19 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'opencart.testrunnerr.TestRunner')
-data.setCell(0, 3, 43963);
+data.setCell(0, 3, 45779);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'feature')
 data.setCell(1, 2, 'opencart.testrunnerr.TestRunner')
-data.setCell(1, 3, 33063);
+data.setCell(1, 3, 10753);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'feature')
 data.setCell(2, 2, 'opencart.testrunnerr.TestRunner')
-data.setCell(2, 3, 8635);
+data.setCell(2, 3, 6897);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'feature')
 data.setCell(3, 2, 'opencart.testrunnerr.TestRunner')
-data.setCell(3, 3, 5174);
+data.setCell(3, 3, 1072);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -373,34 +383,30 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">38412 ms</span>
+                <span class="method-start">11479 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">feature(Checkout)</span>
+                <span class="method-start">15119 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">feature(Landing in Home Page and Display)</span>
-                <span class="method-start">49379 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">feature(Logout and forgot password)</span>
-                <span class="method-start">93379 ms</span>
+                <span class="method-start">25877 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">feature(Signin)</span>
-                <span class="method-start">102019 ms</span>
+                <span class="method-start">71671 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">feature(Product Display)</span>
-                <span class="method-start">107195 ms</span>
+                <span class="method-start">78569 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">140314 ms</span>
+                <span class="method-start">79653 ms</span>
               </div> <!-- configuration-class after -->
-              <div class="configuration-test after">
-                <span class="method-name">CloseApplicationURL</span>
-                <span class="method-start">140333 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

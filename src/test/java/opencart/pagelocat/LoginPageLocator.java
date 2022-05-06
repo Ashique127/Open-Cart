@@ -1,4 +1,4 @@
-package opencart.pagelocatorrr;
+package opencart.pagelocat;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,4 +25,18 @@ public class LoginPageLocator extends TestBaseOpenCart {
 	public WebElement Enterpassword;
 	@FindBy(how = How.XPATH, using = "//input[@value='Login']")
 	public WebElement Clickonloginbutton;
+	@FindBy(how = How.XPATH, using = "//h2[text()='My Account']")
+	public WebElement VerifyAccount;
+	@FindBy(how = How.XPATH, using = "//a[text()='Edit Account']")
+	public WebElement EditAccInfo;
+	@FindBy(how = How.XPATH, using = "//input[@id='input-firstname']")
+	public WebElement ClearFisrtName;
+	@FindBy(how = How.XPATH, using = "//input[@id='input-lastname']")
+	public WebElement ClearLasttName;
+	@FindBy(how = How.XPATH, using = "//input[@id='input-email']")
+	public WebElement ClearEmail;
+	@FindBy(how = How.XPATH, using = "//input[@id='input-telephone']")
+	public WebElement ClearTelephone;
+	@FindBy(how = How.XPATH, using = "//input[@id='input-firstname']")
+	public WebElement NewFisrtName;
 }

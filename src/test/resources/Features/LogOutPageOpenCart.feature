@@ -1,12 +1,12 @@
 Feature: Logout and forgot password
 
 
-#@Sanity2
-#Scenario: User can logout successfully 
-#Given Launch application "<URL>"
-#Then Click on 'My Account' Dropdown menu
-#Then Click 'Logout' option
-#Then Click on 'Continue' button
+@Sanity2
+Scenario: User can logout successfully 
+Given Launch application "<URL>"
+Then Click on 'My Account' Dropdown menu
+Then Click 'Logout' option
+Then Click on 'Continue' button
 
 
 @Sanity3

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Nov 27 13:30:06 PST 2021</td>
+<td>Started on:</td><td>Tue Apr 26 15:34:08 PDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>143 seconds (143762 ms)</td>
+<tr><td>Total time:</td><td>79 seconds (79710 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='opencart.testrunnerr.TestRunner.feature()'><b>feature</b><br>Test class: opencart.testrunnerr.TestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Landing in Home Page and Display</td>
-<td><div><pre>cucumber.runtime.CucumberException: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 39.315
-  (Session info: chrome=96.0.4664.45)
+<td title='opencart.testrunnerr.TestRunner.feature()'><b>feature</b><br>Test class: opencart.testrunnerr.TestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Logout and forgot password</td>
+<td><div><pre>cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/nav[@id=&apos;top&apos;]/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]&quot;}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;LAPTOP-GCEPLDKO&apos;, ip: &apos;192.168.1.88&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 155c02baea048aba06c5d9199b217890
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9411d8d8ea1f0e82dc6740e173696679
+*** Element info: {Using=xpath, value=//body/nav[@id=&apos;top&apos;]/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]}
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -113,13 +115,15 @@ Session ID: 155c02baea048aba06c5d9199b217890
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 39.315
-  (Session info: chrome=96.0.4664.45)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/nav[@id=&apos;top&apos;]/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]&quot;}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;LAPTOP-GCEPLDKO&apos;, ip: &apos;192.168.1.88&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 155c02baea048aba06c5d9199b217890
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9411d8d8ea1f0e82dc6740e173696679
+*** Element info: {Using=xpath, value=//body/nav[@id=&apos;top&apos;]/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -130,18 +134,26 @@ Session ID: 155c02baea048aba06c5d9199b217890
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at opencart.utility.TestBaseOpenCart.launch(TestBaseOpenCart.java:53)
-	at opencart.stepdefinition.StepDefHomePage.launch_application(StepDefHomePage.java:18)
-	at ?.Given Launch application &quot;&lt;URL&gt;&quot;(HomePageOpenCart.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace843005078", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace843005078'><pre>cucumber.runtime.CucumberException: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 39.315
-  (Session info: chrome=96.0.4664.45)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at opencart.pageaction.LogoutPageAction.Logout(LogoutPageAction.java:14)
+	at opencart.stepdefinition.StepDeffLogoutPage.click_Logout_option(StepDeffLogoutPage.java:17)
+	at ?.Then Click &apos;Logout&apos; option(LogOutPageOpenCart.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace100048427", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace100048427'><pre>cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/nav[@id=&apos;top&apos;]/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]&quot;}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;LAPTOP-GCEPLDKO&apos;, ip: &apos;192.168.1.88&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 155c02baea048aba06c5d9199b217890
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9411d8d8ea1f0e82dc6740e173696679
+*** Element info: {Using=xpath, value=//body/nav[@id=&apos;top&apos;]/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]}
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -172,13 +184,15 @@ Session ID: 155c02baea048aba06c5d9199b217890
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 39.315
-  (Session info: chrome=96.0.4664.45)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/nav[@id=&apos;top&apos;]/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]&quot;}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;LAPTOP-GCEPLDKO&apos;, ip: &apos;192.168.1.88&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 155c02baea048aba06c5d9199b217890
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Ashique\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9411d8d8ea1f0e82dc6740e173696679
+*** Element info: {Using=xpath, value=//body/nav[@id=&apos;top&apos;]/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -189,12 +203,18 @@ Session ID: 155c02baea048aba06c5d9199b217890
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at opencart.utility.TestBaseOpenCart.launch(TestBaseOpenCart.java:53)
-	at opencart.stepdefinition.StepDefHomePage.launch_application(StepDefHomePage.java:18)
-	at ?.Given Launch application &quot;&lt;URL&gt;&quot;(HomePageOpenCart.feature:6)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at opencart.pageaction.LogoutPageAction.Logout(LogoutPageAction.java:14)
+	at opencart.stepdefinition.StepDeffLogoutPage.click_Logout_option(StepDeffLogoutPage.java:17)
+	at ?.Then Click &apos;Logout&apos; option(LogOutPageOpenCart.feature:8)
 </pre></div></td>
-<td>43</td>
+<td>45</td>
 <td>opencart.testrunnerr.TestRunner@65f095f8</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -205,19 +225,19 @@ Session ID: 155c02baea048aba06c5d9199b217890
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='opencart.testrunnerr.TestRunner.feature()'><b>feature</b><br>Test class: opencart.testrunnerr.TestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Logout and forgot password</td>
+<td title='opencart.testrunnerr.TestRunner.feature()'><b>feature</b><br>Test class: opencart.testrunnerr.TestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Checkout</td>
 <td></td>
-<td>8</td>
+<td>10</td>
 <td>opencart.testrunnerr.TestRunner@65f095f8</td></tr>
 <tr>
 <td title='opencart.testrunnerr.TestRunner.feature()'><b>feature</b><br>Test class: opencart.testrunnerr.TestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Signin</td>
 <td></td>
-<td>5</td>
+<td>6</td>
 <td>opencart.testrunnerr.TestRunner@65f095f8</td></tr>
 <tr>
 <td title='opencart.testrunnerr.TestRunner.feature()'><b>feature</b><br>Test class: opencart.testrunnerr.TestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Product Display</td>
 <td></td>
-<td>33</td>
+<td>1</td>
 <td>opencart.testrunnerr.TestRunner@65f095f8</td></tr>
 </table><p>
 </body>

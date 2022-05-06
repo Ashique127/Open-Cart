@@ -22,10 +22,8 @@ public class TestBaseOpenCart {
 			prop = new Properties();
 			prop.load(flss);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

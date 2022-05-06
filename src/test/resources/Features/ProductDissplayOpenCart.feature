@@ -5,7 +5,7 @@ Feature: Product Display
 Scenario: Successfully verify product search & display
 Given Launch application "<URL>"
 Then Enter any existing Product name into the Search text box field 
-Then Click on the button having search icon
+Then Click on the button having search  icon
 Then Click on the Product displayed in the Search results
 Then Click on the main bigger sized Thumbnail image displayed on the 'Product Display Page' 
 Then Click on '<' and '>' options 

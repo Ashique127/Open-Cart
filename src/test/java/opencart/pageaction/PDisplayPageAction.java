@@ -1,6 +1,6 @@
 package opencart.pageaction;
 
-import opencart.pagelocatorrr.PDisplayPageLocator;
+import opencart.pagelocat.PDisplayPageLocator;
 import opencart.utility.TestBaseOpenCart;
 
 public class PDisplayPageAction extends TestBaseOpenCart {

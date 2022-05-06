@@ -4,17 +4,190 @@
     "elements": [
       {
         "line": 5,
-        "name": "Successfully verify search result display",
-        "description": "",
-        "id": "landing-in-home-page-and-display;successfully-verify-search-result-display",
+        "name": "Validate navigating to Checkout page when there are",
+        "description": "no products added to the Shopping Cart",
+        "id": "checkout;validate-navigating-to-checkout-page-when-there-are",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 41158322400,
-              "error_message": "org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 39.315\n  (Session info: chrome\u003d96.0.4664.45)\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027LAPTOP-GCEPLDKO\u0027, ip: \u0027192.168.1.88\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\Ashique\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 155c02baea048aba06c5d9199b217890\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)\r\n\tat opencart.utility.TestBaseOpenCart.launch(TestBaseOpenCart.java:53)\r\n\tat opencart.stepdefinition.StepDefHomePage.launch_application(StepDefHomePage.java:18)\r\n\tat ✽.Given Launch application \"\u003cURL\u003e\"(HomePageOpenCart.feature:6)\r\n",
-              "status": "failed"
+              "duration": 4400519700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Launch application \"\u003cURL\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cURL\u003e",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefHomePage.launch_application(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1179686100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on \u0027Checkout\u0027 header option",
+            "match": {
+              "location": "StepDepCheckout.click_on_Checkout_header_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 467456500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify user on the empty page",
+            "match": {
+              "location": "StepDepCheckout.verify_user_on_the_empty_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Sanity5"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Validate navigating to Checkout page from \u0027Shopping Cart\u0027 page",
+        "description": "",
+        "id": "checkout;validate-navigating-to-checkout-page-from-\u0027shopping-cart\u0027-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 783984300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Launch application \"\u003cURL\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cURL\u003e",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefHomePage.launch_application(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 123904100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "enter any existing Product name into the Search text box field",
+            "match": {
+              "location": "StepDepCheckout.enter_any_existing_Product_name_into_the_Search_text_box_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 856867900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "click on the button having search icon",
+            "match": {
+              "location": "StepDepCheckout.click_on_the_button_having_search_icon()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 100873100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click on \u0027Add to Cart\u0027 button on the Product displayed in the Search results",
+            "match": {
+              "location": "StepDepCheckout.click_on_Add_to_Cart_button_on_the_Product_displayed_in_the_Search_results()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 937111100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click on the \u0027shopping cart!\u0027 link in the displayed success message",
+            "match": {
+              "location": "StepDepCheckout.click_on_the_shopping_cart_link_in_the_displayed_success_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1494244600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Click on \u0027Checkout\u0027 button in the \u0027Shopping Cart\u0027 page",
+            "match": {
+              "location": "StepDepCheckout.click_on_Checkout_button_in_the_Shopping_Cart_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 68852500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "verify checkout button is enable",
+            "match": {
+              "location": "StepDepCheckout.verify_checkout_button_is_enable()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@Sanity6"
+          }
+        ]
+      }
+    ],
+    "name": "Checkout",
+    "description": "",
+    "id": "checkout",
+    "keyword": "Feature",
+    "uri": "Checkout.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "User can logout successfully",
+        "description": "",
+        "id": "logout-and-forgot-password;user-can-logout-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 865291400,
+              "status": "passed"
             },
             "line": 6,
             "name": "Launch application \"\u003cURL\u003e\"",
@@ -31,23 +204,26 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 121228900,
+              "status": "passed"
             },
             "line": 7,
-            "name": "product search by iphone",
+            "name": "Click on \u0027My Account\u0027 Dropdown menu",
             "match": {
-              "location": "StepDefHomePage.product_search_by_iphone()"
+              "location": "StepDeffLogoutPage.click_on_My_Account_Dropdown_menu()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 40798406200,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//body/nav[@id\u003d\u0027top\u0027]/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]\"}\n  (Session info: chrome\u003d100.0.4896.127)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027LAPTOP-GCEPLDKO\u0027, ip: \u0027192.168.1.88\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\\Users\\Ashique\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9411d8d8ea1f0e82dc6740e173696679\n*** Element info: {Using\u003dxpath, value\u003d//body/nav[@id\u003d\u0027top\u0027]/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[5]/a[1]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy24.click(Unknown Source)\r\n\tat opencart.pageaction.LogoutPageAction.Logout(LogoutPageAction.java:14)\r\n\tat opencart.stepdefinition.StepDeffLogoutPage.click_Logout_option(StepDeffLogoutPage.java:17)\r\n\tat ✽.Then Click \u0027Logout\u0027 option(LogOutPageOpenCart.feature:8)\r\n",
+              "status": "failed"
             },
             "line": 8,
-            "name": "click on search button",
+            "name": "Click \u0027Logout\u0027 option",
             "match": {
-              "location": "StepDefHomePage.click_on_search_button()"
+              "location": "StepDeffLogoutPage.click_Logout_option()"
             },
             "keyword": "Then "
           },
@@ -56,9 +232,9 @@
               "status": "skipped"
             },
             "line": 9,
-            "name": "Verify user on search result display",
+            "name": "Click on \u0027Continue\u0027 button",
             "match": {
-              "location": "StepDefHomePage.verify_user_on_search_result_display()"
+              "location": "StepDeffLogoutPage.click_on_Continue_button()"
             },
             "keyword": "Then "
           }
@@ -66,47 +242,11 @@
         "tags": [
           {
             "line": 4,
-            "name": "@Sanity"
+            "name": "@Sanity2"
           }
         ]
-      }
-    ],
-    "name": "Landing in Home Page and Display",
-    "description": "",
-    "id": "landing-in-home-page-and-display",
-    "keyword": "Feature",
-    "uri": "HomePageOpenCart.feature"
-  },
-  {
-    "line": 1,
-    "elements": [
+      },
       {
-        "comments": [
-          {
-            "line": 4,
-            "value": "#@Sanity2"
-          },
-          {
-            "line": 5,
-            "value": "#Scenario: User can logout successfully"
-          },
-          {
-            "line": 6,
-            "value": "#Given Launch application \"\u003cURL\u003e\""
-          },
-          {
-            "line": 7,
-            "value": "#Then Click on \u0027My Account\u0027 Dropdown menu"
-          },
-          {
-            "line": 8,
-            "value": "#Then Click \u0027Logout\u0027 option"
-          },
-          {
-            "line": 9,
-            "value": "#Then Click on \u0027Continue\u0027 button"
-          }
-        ],
         "line": 13,
         "name": "User can successfully get the credentials",
         "description": "",
@@ -116,7 +256,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4131862700,
+              "duration": 864766900,
               "status": "passed"
             },
             "line": 14,
@@ -134,7 +274,7 @@
           },
           {
             "result": {
-              "duration": 114892400,
+              "duration": 102811600,
               "status": "passed"
             },
             "line": 15,
@@ -146,7 +286,7 @@
           },
           {
             "result": {
-              "duration": 918279500,
+              "duration": 596406500,
               "status": "passed"
             },
             "line": 16,
@@ -158,7 +298,7 @@
           },
           {
             "result": {
-              "duration": 1095732500,
+              "duration": 596191800,
               "status": "passed"
             },
             "line": 17,
@@ -170,7 +310,7 @@
           },
           {
             "result": {
-              "duration": 173861000,
+              "duration": 164636600,
               "status": "passed"
             },
             "line": 18,
@@ -182,7 +322,7 @@
           },
           {
             "result": {
-              "duration": 2180422100,
+              "duration": 1624512800,
               "status": "passed"
             },
             "line": 19,
@@ -220,7 +360,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1221559700,
+              "duration": 899777100,
               "status": "passed"
             },
             "line": 6,
@@ -238,7 +378,7 @@
           },
           {
             "result": {
-              "duration": 121343900,
+              "duration": 100702300,
               "status": "passed"
             },
             "line": 7,
@@ -250,7 +390,7 @@
           },
           {
             "result": {
-              "duration": 1766139200,
+              "duration": 939713600,
               "status": "passed"
             },
             "line": 8,
@@ -262,7 +402,7 @@
           },
           {
             "result": {
-              "duration": 630321500,
+              "duration": 294664900,
               "status": "passed"
             },
             "line": 9,
@@ -274,13 +414,97 @@
           },
           {
             "result": {
-              "duration": 1420031300,
+              "duration": 1234224900,
               "status": "passed"
             },
             "line": 10,
             "name": "Click on login button",
             "match": {
               "location": "StepDeffLoginPage.click_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 66169000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify customer on My Account Page",
+            "match": {
+              "location": "StepDeffLoginPage.verify_customer_on_My_Account_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2279740300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click on \u0027Edit your account information\u0027 link on the displayed \u0027My Account\u0027 page",
+            "match": {
+              "location": "StepDeffLoginPage.click_on_Edit_your_account_information_link_on_the_displayed_My_Account_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 231018400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Naviagte to First Name and clear information",
+            "match": {
+              "location": "StepDeffLoginPage.naviagte_to_First_Name_and_clear_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 198645600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Move to Last Name and clear information",
+            "match": {
+              "location": "StepDeffLoginPage.move_to_Last_Name_and_clear_information()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 180255600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Naviagte to Email and clear information",
+            "match": {
+              "location": "StepDeffLoginPage.naviagte_to_Email_and_clear_information()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 217856400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Move to Telephone and clear information",
+            "match": {
+              "location": "StepDeffLoginPage.move_to_Telephone_and_clear_information()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 243178900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "again naviagte to First Name and enter \u0027Sohel\u0027",
+            "match": {
+              "location": "StepDeffLoginPage.again_naviagte_to_First_Name_and_enter_Sohel()"
             },
             "keyword": "Then "
           }
@@ -312,7 +536,7 @@
         "steps": [
           {
             "result": {
-              "duration": 820024200,
+              "duration": 898684500,
               "status": "passed"
             },
             "line": 6,
@@ -330,7 +554,7 @@
           },
           {
             "result": {
-              "duration": 823390600,
+              "duration": 164490800,
               "status": "passed"
             },
             "line": 7,
@@ -342,20 +566,16 @@
           },
           {
             "result": {
-              "duration": 963776800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 8,
-            "name": "Click on the button having search icon",
-            "match": {
-              "location": "StepDeffProductDisplay.click_on_the_button_having_search_icon()"
-            },
+            "name": "Click on the button having search  icon",
+            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 26450739900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Click on the Product displayed in the Search results",
@@ -366,8 +586,7 @@
           },
           {
             "result": {
-              "duration": 108987800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Click on the main bigger sized Thumbnail image displayed on the \u0027Product Display Page\u0027",
@@ -378,8 +597,7 @@
           },
           {
             "result": {
-              "duration": 161578700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "Click on \u0027\u003c\u0027 and \u0027\u003e\u0027 options",
@@ -390,8 +608,7 @@
           },
           {
             "result": {
-              "duration": 3442196200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
             "name": "Click on \u0027x\u0027 option or press \u0027ESC\u0027 keyboard key when the thumbnails are displayed in Light box view",
@@ -402,8 +619,7 @@
           },
           {
             "result": {
-              "duration": 78238600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 13,
             "name": "Click on the normal sized Thumbnail images",
@@ -414,8 +630,7 @@
           },
           {
             "result": {
-              "duration": 137816900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "Click on \u0027\u003c\u0027 and \u0027\u003e\u0027 options again",
@@ -426,8 +641,7 @@
           },
           {
             "result": {
-              "duration": 61155700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "Click on \u0027x\u0027 option or press \u0027ESC\u0027 keyboard key again when the thumbnails are displayed in Light box view",

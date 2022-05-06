@@ -8,8 +8,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 import opencart.utility.TestBaseOpenCart;
 
 @CucumberOptions(features = { "src/test/resources/Features" }, plugin = {
-		"json:target/cucumber.json" }, glue = "opencart.stepdefinition", tags = {
-				"@Sanity, @Sanity1, @Sanity3, @Sanity4" })
+		"json:target/cucumber.json" }, glue = "opencart.stepdefinition", tags = { "@Sanity1, @Sanity2, @Sanity3, @Sanity4, @Sanity5, @Sanity6" })
 
 public class TestRunner extends AbstractTestNGCucumberTests {
 
@@ -21,7 +20,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 
 	}
 
-	@AfterTest
+	@AfterTest(enabled = false)
 	public void CloseApplicationURL() {
 		TestBaseOpenCart lunchh = new TestBaseOpenCart();
 		lunchh.driver.quit();

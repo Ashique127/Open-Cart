@@ -1,6 +1,6 @@
 package opencart.pageaction;
 
-import opencart.pagelocatorrr.LogoutPageLocator;
+import opencart.pagelocat.LogoutPageLocator;
 import opencart.utility.TestBaseOpenCart;
 
 public class LogoutPageAction extends TestBaseOpenCart {

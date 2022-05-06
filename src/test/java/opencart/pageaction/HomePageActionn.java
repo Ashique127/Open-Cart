@@ -1,7 +1,7 @@
 package opencart.pageaction;
 
 import junit.framework.Assert;
-import opencart.pagelocatorrr.HomePageLocator;
+import opencart.pagelocat.HomePageLocator;
 import opencart.utility.TestBaseOpenCart;
 import opencart.utility.UtillOpenCart;
 

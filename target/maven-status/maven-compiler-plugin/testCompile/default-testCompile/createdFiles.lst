@@ -1,14 +1,11 @@
 opencart\pageaction\HomePageActionn.class
-opencart\pagelocatorrr\LoginPageLocator.class
 opencart\stepdefinition\StepDefHomePage.class
 opencart\utility\TestBaseOpenCart.class
-opencart\pagelocatorrr\LogoutPageLocator.class
-opencart\pagelocatorrr\HomePageLocator.class
+opencart\testrunnerr\TestRunner.class
+opencart\utility\TestDataOpenCart.class
+opencart\stepdefinition\StepDeffLoginPage.class
 opencart\pageaction\LoginPageAction.class
 opencart\stepdefinition\StepDeffLogoutPage.class
 opencart\utility\LogsHelpper_Loggggg.class
-opencart\testrunnerr\TestRunner.class
-opencart\utility\TestDataOpenCart.class
 opencart\pageaction\LogoutPageAction.class
 opencart\utility\UtillOpenCart.class
-opencart\stepdefinition\StepDeffLoginPage.class
